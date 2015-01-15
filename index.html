@@ -1,1 +1,57 @@
-Hello, World!
+---
+layout: default
+---
+
+<div class="home">
+  <div class="jumbotron">
+    <h1>Hi! I'm Matt Wittmann.</h1>
+    <p>
+    I'm a graduate student studying computational physics at the University of
+    California, Santa Cruz. I'm about to finish my PhD and am seeking
+    employment in a research or data science position starting in June 2015.
+    </p>    
+    <p>
+    <a class="btn btn-primary btn-lg" href="about" role="button">About me</a>
+    <a class="btn btn-success btn-lg" href="cv.pdf" role="button">My CV</a>
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Recent posts</h2>
+        <ul class="posts">
+          {% for post in site.posts limit:5 %}
+            <li>
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      <p><a class="btn btn-default btn-lg" href="blog" role="button">More &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Research</h2>
+      <p>
+        I study theoretical condensed matter physics in the research group of
+        <a href="http://young.physics.ucsc.edu/">Dr. A. Peter Young</a>
+        at the University of California, Santa Cruz. My research has focused on
+        the use of computer simulations to probe the physics of
+        <a href="http://en.wikipedia.org/wiki/Complex_system">complex systems</a>,
+        where analytical approaches have so far had limited success.
+      </p>
+      <p><a class="btn btn-default btn-lg" href="research" role="button">More &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Contact</h2>
+      <p>
+        <address>
+          Matthew Wittmann<br>
+          Physics Department<br>
+          University of California, Santa Cruz<br>
+          1156 High Street<br>
+          Santa Cruz, CA 95064<br>
+        </address>
+      </p>
+      <p><a class="btn btn-default btn-lg" href="cv.pdf" role="button">More &raquo;</a></p>
+    </div>
+  </div>
+</div>

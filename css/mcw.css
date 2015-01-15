@@ -1,0 +1,21 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  background-color: #fdfdfd;
+}
+
+.navbar-static-top {
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron {
+}
+
+address {
+}
