@@ -2,8 +2,9 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="jumbotron">
+
+<div class="home-header">
+  <div class="container">
     <h1>Hi! I'm Matt Wittmann.</h1>
     <p>
     I'm a graduate student studying computational physics at the University of
@@ -11,47 +12,57 @@ layout: default
     employment in a research or data science position starting in June 2015.
     </p>    
     <p>
-    <a class="btn btn-primary btn-lg" href="about" role="button">About me</a>
-    <a class="btn btn-success btn-lg" href="cv.pdf" role="button">My CV</a>
+    <a class="btn btn-primary btn-lg" href="#about" role="button">About me</a>
+    <a class="btn btn-success btn-lg" href="cv.pdf" role="button">My CV &raquo</a>
     </p>
   </div>
+</div>
+<div class="container">
+  <div class="page-header"><h1 id="about">About me</h1></div>
   <div class="row">
-    <div class="col-md-4">
-      <h2>Recent posts</h2>
-        <ul class="posts">
-          {% for post in site.posts limit:5 %}
-            <li>
-              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      <p><a class="btn btn-default btn-lg" href="blog" role="button">More &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>Research</h2>
+    <div class="col-sm-8">
       <p>
-        I study theoretical condensed matter physics in the research group of
-        <a href="http://young.physics.ucsc.edu/">Dr. A. Peter Young</a>
-        at the University of California, Santa Cruz. My research has focused on
-        the use of computer simulations to probe the physics of
+        I like
+        understanding how things work,
+        finding patterns in data,
         <a href="http://en.wikipedia.org/wiki/Complex_system">complex systems</a>,
-        where analytical approaches have so far had limited success.
+        building new things,
+        programming computers,
+        nature and the outdoors,
+        music, and
+        cycling.
       </p>
-      <p><a class="btn btn-default btn-lg" href="research" role="button">More &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>Contact</h2>
       <p>
-        <address>
-          Matthew Wittmann<br>
-          Physics Department<br>
-          University of California, Santa Cruz<br>
-          1156 High Street<br>
-          Santa Cruz, CA 95064<br>
-        </address>
+        I'm looking for work in a field that emphasizes creative
+        problem-solving, allows me to apply the analytical skills I have
+        developed in graduate school to real-world problems, and focuses on
+        building new and exciting projects.
       </p>
-      <p><a class="btn btn-default btn-lg" href="cv.pdf" role="button">More &raquo;</a></p>
+      <p>
+        I'm from
+        <a href="http://en.wikipedia.org/wiki/Niwot,_Colorado">Niwot, Colorado</a>
+        and studied Physics and Mathematics at the
+        <a href="http://www.colorado.edu/">University of Colorado at Boulder</a>
+        before joining the PhD program at the
+        <a href="http://www.ucsc.edu/">University of California, Santa Cruz</a>.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/me.jpg" alt="me">
+        <div class="caption">
+          <h3>Matt Wittmann</h3>
+          <p><a href"mailto:mcwitt@gmail.com">mcwitt@gmail.com</a></p>
+          <div class="social-icons">
+          {% for icon in site.data.social-icons %}
+            <a class="social-icon--link {{ icon.class }}" href="{{ icon.url }}">
+              {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
+              <span class="social-icon--title visuallyhidden">{{ icon.title }}</span>
+            </a>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

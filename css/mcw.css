@@ -1,21 +1,52 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
 .navbar-static-top {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
-.navbar-brand {
-  font-weight: bold;
+.social-icons a:hover {
+  text-decoration: none;
 }
 
-.jumbotron {
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
-address {
+.home-header {
+  color: #cedef2;
+  background: radial-gradient(#1a5eba, #164e9a);
+  text-shadow: 0 1px 0 #081d39;
+  text-align: center;
+  padding: 25px;
 }
+
+.home-header h1 {
+  color: white;
+}
+
+.home-header .btn {
+  background: none;
+  border-color: white;
+}
+
+.home-header .btn:hover {
+  background: white;
+  color: #1a5eba;
+}
+
