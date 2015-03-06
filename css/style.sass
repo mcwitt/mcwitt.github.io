@@ -1,13 +1,22 @@
 ---
 ---
 
-$primary-color: hsl(215, 75%, 42%)
-$light-color: lighten($primary-color, 50%)
+$color-hl: hsl(215, 75%, 42%)
+$color-hl-light: lighten($color-hl, 50%)
+$color-fg: #333
+$color-fg-light: #444
+
+$weight-normal: 300
+$weight-bold: 600
 
 body
+  color: $color-fg-light
   font-family: 'Open Sans', sans-serif
   font-size: 16px
-  font-weight: 300
+  font-weight: $weight-normal
+
+  h1, h2, h3
+    color: $color-fg
 
 .visuallyhidden
   border: 0
@@ -27,20 +36,19 @@ body
 .social-icon
   width: 20px
   height: 20px
-  margin-left: 5px
-  margin-right: 5px
+  margin: 5px
 
   path
-    fill: gray
+    fill: $color-fg
 
   &:hover
     path
       fill: black
 
 .fancy-header
-  color: $light-color
-  background: radial-gradient(fade-out($primary-color, 0.2), $primary-color)
-  text-shadow: 0 1px 0 darken($primary-color, 20%)
+  color: $color-hl-light
+  background: radial-gradient(fade-out($color-hl, 0.2), $color-hl)
+  text-shadow: 0 1px 1px darken($color-hl, 30%)
   text-align: center
   padding: 25px
 
@@ -49,12 +57,19 @@ body
 
   .btn
     color: white
+    font-weight: $weight-normal
     border-color: white
     background: none
     margin: 5px
 
   .btn:hover
-    color: $primary-color
+    color: $color-hl
     background-color: white
     text-shadow: none
+
+.publist
+  .me
+    font-weight: $weight-normal
+  .title
+    font-style: italic
 
