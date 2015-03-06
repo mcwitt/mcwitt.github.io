@@ -27,7 +27,15 @@ body
 .social-icon
   width: 20px
   height: 20px
-  margin-right: 10px
+  margin-left: 5px
+  margin-right: 5px
+
+  path
+    fill: gray
+
+  &:hover
+    path
+      fill: black
 
 .fancy-header
   color: $light-color
@@ -40,11 +48,13 @@ body
     color: white
 
   .btn
-    margin-right: 10px
-    background: none
+    color: white
     border-color: white
+    background: none
+    margin: 5px
 
   .btn:hover
-    background: white
     color: $primary-color
+    background-color: white
+    text-shadow: none
 
