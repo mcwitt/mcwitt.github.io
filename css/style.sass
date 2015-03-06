@@ -1,0 +1,50 @@
+---
+---
+
+$primary-color: hsl(215, 75%, 42%)
+$light-color: lighten($primary-color, 50%)
+
+body
+  font-family: 'Open Sans', sans-serif
+  font-size: 16px
+  font-weight: 300
+
+.visuallyhidden
+  border: 0
+  clip: rect(0,0,0,0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+
+.navbar-static-top
+  margin-bottom: 0
+
+.social-icons a:hover
+  text-decoration: none
+
+.social-icon
+  width: 20px
+  height: 20px
+  margin-right: 10px
+
+.fancy-header
+  color: $light-color
+  background: radial-gradient(fade-out($primary-color, 0.2), $primary-color)
+  text-shadow: 0 1px 0 darken($primary-color, 20%)
+  text-align: center
+  padding: 25px
+
+  h1 
+    color: white
+
+  .btn
+    margin-right: 10px
+    background: none
+    border-color: white
+
+  .btn:hover
+    background: white
+    color: $primary-color
+
