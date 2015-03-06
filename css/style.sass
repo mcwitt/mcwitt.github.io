@@ -17,6 +17,7 @@ body
 
   h1, h2, h3
     color: $color-fg
+    font-weight: $weight-normal
 
 .visuallyhidden
   border: 0
@@ -48,24 +49,28 @@ body
 .fancy-header
   color: $color-hl-light
   background: radial-gradient(fade-out($color-hl, 0.2), $color-hl)
-  text-shadow: 0 1px 1px darken($color-hl, 30%)
   text-align: center
-  padding: 25px
+  padding: 20px
 
-  h1 
+  h1, .statement
+    text-shadow: 0 1px 1px darken($color-hl, 30%)
+
+  h1
     color: white
+
+  .statement
+    margin: 10px
 
   .btn
-    color: white
-    font-weight: $weight-normal
-    border-color: white
-    background: none
     margin: 5px
+    border: none
+    color: $color-fg
+    background-color: $color-hl-light
+    font-weight: $weight-normal
+    box-shadow: 0 1px 1px darken($color-hl, 30%)
 
-  .btn:hover
-    color: $color-hl
-    background-color: white
-    text-shadow: none
+    &:hover
+      background-color: white
 
 .publist
   .me
