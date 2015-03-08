@@ -6,18 +6,22 @@ $color-hl-light: lighten($color-hl, 50%)
 $color-fg: #333
 $color-fg-light: #444
 
-$weight-normal: 300
-$weight-bold: 600
-
 body
   color: $color-fg-light
   font-family: 'Open Sans', sans-serif
   font-size: 16px
-  font-weight: $weight-normal
+
+  a
+    color: $color-hl
+
+    &:hover
+      color: $color-hl
+      text-decoration: underline
+
 
   h1, h2, h3
     color: $color-fg
-    font-weight: $weight-normal
+    font-weight: 300
 
 .visuallyhidden
   border: 0
@@ -37,14 +41,14 @@ body
 .social-icon
   width: 20px
   height: 20px
-  margin: 5px
+  margin: 2px
 
   path
     fill: $color-fg
 
   &:hover
     path
-      fill: black
+      fill: $color-hl
 
 .fancy-header
   color: $color-hl-light
@@ -66,15 +70,18 @@ body
     border: none
     color: $color-fg
     background-color: $color-hl-light
-    font-weight: $weight-normal
     box-shadow: 0 1px 1px darken($color-hl, 30%)
 
     &:hover
       background-color: white
 
 .publist
-  .me
-    font-weight: $weight-normal
+  a
+    color: $color-fg
+
   .title
-    font-style: italic
+    &:before
+      content: open-quote
+    &:after
+      content: close-quote
 
