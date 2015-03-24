@@ -7,81 +7,87 @@ $color-fg: #333
 $color-fg-light: #444
 
 body
-  color: $color-fg-light
-  font-family: 'Open Sans', sans-serif
-  font-size: 16px
+    color: $color-fg-light
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
 
-  a
-    color: $color-hl
+    a
+        color: $color-hl
 
-    &:hover
-      color: $color-hl
-      text-decoration: underline
+        &:hover
+            color: $color-hl
+            text-decoration: underline
 
 
-  h1, h2, h3
-    color: $color-fg
-    font-weight: 300
+    h1, h2, h3
+        color: $color-fg
+        font-weight: 300
 
 .visuallyhidden
-  border: 0
-  clip: rect(0,0,0,0)
-  height: 1px
-  margin: -1px
-  overflow: hidden
-  padding: 0
-  position: absolute
+    border: 0
+    clip: rect(0,0,0,0)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
 
 .navbar-static-top
-  margin-bottom: 0
+    margin-bottom: 0
 
 .social-icons a:hover
-  text-decoration: none
+    text-decoration: none
 
 .social-icon
-  width: 25px
-  height: 25px
-  margin: 5px
-
-  path
-    fill: $color-fg
-
-  &:hover
-    path
-      fill: $color-hl
-
-.fancy-header
-  color: $color-hl-light
-  background: radial-gradient(fade-out($color-hl, 0.2), $color-hl)
-  text-align: center
-  padding: 20px
-
-  h1, .statement
-    text-shadow: 0 1px 1px darken($color-hl, 30%)
-
-  h1
-    color: white
-
-  .statement
-    margin: 10px
-
-  .btn
+    width: 25px
+    height: 25px
     margin: 5px
-    border: none
-    color: $color-fg
-    background-color: $color-hl-light
-    box-shadow: 0 1px 1px darken($color-hl, 30%)
+
+    path
+        fill: $color-fg
 
     &:hover
-      background-color: white
+        path
+            fill: $color-hl
+
+.fancy-header
+    color: $color-hl-light
+    background: radial-gradient(fade-out($color-hl, 0.2), $color-hl)
+    text-align: center
+    padding: 20px
+
+    h1, .statement
+        text-shadow: 0 1px 1px darken($color-hl, 30%)
+
+    h1
+        color: white
+
+    .statement
+        margin: 10px
+
+    .btn
+        margin: 5px
+        border: none
+        color: $color-fg
+        background-color: $color-hl-light
+        box-shadow: 0 1px 1px darken($color-hl, 30%)
+
+        &:hover
+            background-color: white
 
 .publist
-  a
-    color: $color-fg
+    a
+        color: $color-fg
 
-  .title
-    &:before
-      content: open-quote
-    &:after
-      content: close-quote
+    .title
+        font-style: italic
+
+.content
+    font-family: 'Lora', serif
+
+    h1, h2, h3
+        font-family: 'Open Sans', sans-serif
+
+.post-content
+    @extend .content
 
