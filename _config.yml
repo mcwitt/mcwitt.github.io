@@ -10,3 +10,5 @@ markdown: kramdown
 highlighter: pygments
 permalink: pretty
 
+kramdown:
+    smart_quotes: ["lsquo","rsquo","ldquo","rdquo"]

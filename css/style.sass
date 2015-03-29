@@ -18,7 +18,6 @@ body
             color: $color-hl
             text-decoration: underline
 
-
     h1, h2, h3
         color: $color-fg
         font-weight: 300
@@ -75,13 +74,6 @@ body
         &:hover
             background-color: white
 
-.publist
-    a
-        color: $color-fg
-
-    .title
-        font-style: italic
-
 .content
     font-family: 'Lora', serif
 
@@ -90,4 +82,13 @@ body
 
 .post-content
     @extend .content
+
+.papers, .talks, .posters
+    .title
+        font-style: italic
+
+.papers
+    .journal
+        .volume
+            font-weight: bold
 
