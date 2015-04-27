@@ -81,7 +81,7 @@ general-purpose optimization algorithms.
 <li>
   <div class="conference">Berkeley Mini Stat Mech Meeting, 2014</div>
   <div class="title">
-    <a href="">
+    <a href="berkeley2014.pdf">
     Scheduling: a good candidate for quantum annealing?
     </a>
   </div>
