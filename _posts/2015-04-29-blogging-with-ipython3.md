@@ -26,9 +26,9 @@ outputs Markdown directly. While this is a flexible solution, I preferred
 infrastructure of `nbconvert` and just create a template file, enabling
 something like
 
-```bash
+{% highlight bash %}
 ipython nbconvert --to jekyll-post my-notebook.ipynb
-```
+{% endhighlight %}
 
 cscorley's implementation seems to be broken in IPython 3.x, but it's a
 relatively easy fix. The problem is that the names of several cell properties
@@ -58,10 +58,10 @@ paths and simplified for my usage):
 Here we're assuming that notebook files are kept in the folder `/notebooks`
 under the site's base URL. Now we can simply run, for example
 
-```bash
+{% highlight bash %}
 ipython nbconvert --config jekyll-post my-notebook.ipynb
 mv my-post.md ../_drafts # or ../_posts, if we're feeling lucky
-```
+{% endhighlight %}
 
 and that's it! The Markdown has the correct metadata and the Jekyll-generated
 post is syntax-highlighted, has execution counts, and correctly links to the
