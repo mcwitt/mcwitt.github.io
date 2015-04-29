@@ -10,3 +10,8 @@ layout: page
     {{ content }}
   </article>
 </div>
+
+{% if page.comments %}
+{% include disqus-comments.html %}
+{% endif %}
+

@@ -2,7 +2,7 @@
 layout: post
 title:  Blogging in Jekyll with IPython 3
 date:   2015-04-29 00:00:00
-categories:
+comments: true
 ---
 
 I've found IPython to be an extremely useful tool in my day to day work.
