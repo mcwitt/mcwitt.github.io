@@ -12,8 +12,11 @@ beautiful and self-documenting, allowing others to reproduce the results.
 
 Recently I've been interested in publishing some of my IPython tinkering on my
 Jekyll blog. Jekyll blog posts are typically written in Markdown, but I found
-that IPython's built-in Markdown conversion (using `ipython nbconvert --to
-markdown`) left a lot of manual work to be done to create a nice-looking post.
+that IPython's built-in Markdown conversion, using
+{% highlight bash %}
+ipython nbconvert --to markdown my-notebook.ipynb
+{% endhighlight %}
+left a lot of manual work to be done to create a nice-looking post.
 In order to have Jekyll process the resulting file, I had to insert the
 necessary metadata at the top of the Markdown by hand. But even then some
 crucial things were missing, like syntax highlighting, execution counts in
@@ -22,35 +25,35 @@ cells, and a way to automatically generate URLs to the image resources.
 After a short search I found a solution in [adamj's post][adamj], which
 involves writing a Python script that parses the JSON from a notebook file and
 outputs Markdown directly. While this is a flexible solution, I preferred
-[cscorley's approach][cscorley] which is to essentially use the existing
-infrastructure of `nbconvert` and just create a template file, enabling
+[Christop Corley's approach][cscorley] which is to essentially use the existing
+infrastructure of nbconvert and just create a template file, enabling
 something like
 
 {% highlight bash %}
 ipython nbconvert --to jekyll-post my-notebook.ipynb
 {% endhighlight %}
 
-cscorley's implementation seems to be broken in IPython 3.x, but it's a
+Christop's implementation seems to be broken in IPython 3.x, but it's a
 relatively easy fix. The problem is that the names of several cell properties
 have changed, but since we only are modifying a few parts of the Markdown
 template that ships with IPython, it's easier and more future-proof to make
 `jekyll-post.tpl` inherit from `markdown.tpl`.
 
-Below are my modified versions of cscorley's files.
+Below are my modified versions of Christop's files.
 
-To enable `ipython nbconvert --to jekyll-post` we can just add the following
-template file in the current directory (or nbconvert's search path):
+To enable `--to jekyll-post` we just add the following template file in the
+current directory (or anywhere in nbconvert's search path):
 
 {% gist eaec84a6b50ad5ac9fb2 jekyll-post.tpl %}
 
-This modifies the standard Markdown template to include a header with the
-Jekyll metadata, include execution counts in each cell, and use Jekyll's syntax
-highlighting for Python cells.
+This modifies nbconvert's standard Markdown template to include a header with
+the Jekyll metadata, include execution counts in each cell, and use Jekyll's
+syntax highlighting for Python cells.
 
 The last thing that I was missing was automatic generation URLs for the images,
 which in a Jekyll environment are generally not in the same folder as the post
-as `nbconvert` assumes. This is solved with the following nbconvert config
-script (adapted from cscorley's, here I've only removed some environment-specific
+as nbconvert assumes. This is solved with the following nbconvert config script
+(adapted from Christop's, here I've only removed some environment-specific
 paths and simplified for my usage):
 
 {% gist eaec84a6b50ad5ac9fb2 jekyll-post.py %}
@@ -63,9 +66,10 @@ ipython nbconvert --config jekyll-post my-notebook.ipynb
 mv my-post.md ../_drafts # or ../_posts, if we're feeling lucky
 {% endhighlight %}
 
-and that's it! The Markdown has the correct metadata and the Jekyll-generated
-post is syntax-highlighted, has execution counts, and correctly links to the
-images.
+and that's it! The generated Markdown has the correct metadata and the
+Jekyll-generated post is syntax-highlighted, has execution counts, and
+correctly links to the images. I'm planning to post some example notebooks up
+soon!
 
 [pd]: http://pandas.pydata.org
 [mpl]: http://matplotlib.org/

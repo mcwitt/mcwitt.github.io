@@ -76,12 +76,22 @@ body
 
 .content
     font-family: 'Lora', serif
+    max-width: 600px
 
     h1, h2, h3
         font-family: 'Open Sans', sans-serif
 
-.post-content
-    @extend .content
+.post
+    .post-header
+        font-style: italic
+
+    .post-content
+        @extend .content
+
+.posts
+    .post-date
+        text-align: right
+        padding-right: 15px
 
 .papers, .talks, .posters
     .title
