@@ -11,4 +11,6 @@ highlighter: pygments
 permalink: pretty
 
 kramdown:
+    input: GFM
+    hard_wrap: false
     smart_quotes: ["lsquo","rsquo","ldquo","rdquo"]
