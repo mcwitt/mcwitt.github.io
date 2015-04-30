@@ -29,7 +29,7 @@ general-purpose optimization algorithms.
     <div class="title">The connection between statics and dynamics of spin glasses</div>
     </a>
   </div>
-  <div class="journal">Physical Review Letters (submitted 4/2015)</div>
+  <div class="journal">Phys. Rev. Lett. (submitted 4/2015)</div>
 </li>
 <li>
   <div class="authors">
@@ -40,7 +40,7 @@ general-purpose optimization algorithms.
     Finite-size scaling above the upper critical dimension
     </a>
   </div>
-  <div class="journal">Physical Review E 90 (2014)</div>
+  <div class="journal">Phys. Rev. E 90 (2014)</div>
 </li>
 <li>
   <div class="authors">
@@ -51,7 +51,7 @@ general-purpose optimization algorithms.
     Low-temperature behavior of the statistics of the overlap distribution in Ising spin-glass models
     </a>
   </div>
-  <div class="journal">Physical Review B 90 (2014)</div>
+  <div class="journal">Phys. Rev. B 90 (2014)</div>
 </li>
 <li>
   <div class="authors">
@@ -62,7 +62,7 @@ general-purpose optimization algorithms.
     <div class="title">Spin glasses in the nonextensive regime</div>
     </a>
   </div>
-  <div class="journal">Physical Review E 85 (2012)</div>
+  <div class="journal">Phys. Rev. E 85 (2012)</div>
 </li>
 </ul>
 
@@ -92,7 +92,7 @@ general-purpose optimization algorithms.
 <li>
   <div class="conference">Berkeley Mini Stat Mech Meeting, 2014</div>
   <div class="title">
-    <a href="berkeley2014.pdf">
+    <a href="https://dl.dropboxusercontent.com/u/8639724/berkeley2014.pdf">
     Scheduling: a good candidate for quantum annealing?
     </a>
   </div>
