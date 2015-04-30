@@ -25,11 +25,22 @@ general-purpose optimization algorithms.
     <span class="me">Matthew Wittmann</span> and A. P. Young
   </div>
   <div class="title">
+    <a href="http://arxiv.org/abs/1504.07709">
+    <div class="title">The connection between statics and dynamics of spin glasses</div>
+    </a>
+  </div>
+  <div class="journal">Physical Review Letters (submitted 4/2015)</div>
+</li>
+<li>
+  <div class="authors">
+    <span class="me">Matthew Wittmann</span> and A. P. Young
+  </div>
+  <div class="title">
     <a href="http://arxiv.org/abs/1410.5296">
     Finite-size scaling above the upper critical dimension
     </a>
   </div>
-  <div class="journal">Physical Review E <span class="volume">90</span> (2014)</div>
+  <div class="journal">Physical Review E 90 (2014)</div>
 </li>
 <li>
   <div class="authors">
@@ -40,7 +51,7 @@ general-purpose optimization algorithms.
     Low-temperature behavior of the statistics of the overlap distribution in Ising spin-glass models
     </a>
   </div>
-  <div class="journal">Physical Review B <span class="volume">90</span> (2014)</div>
+  <div class="journal">Physical Review B 90 (2014)</div>
 </li>
 <li>
   <div class="authors">
@@ -51,7 +62,7 @@ general-purpose optimization algorithms.
     <div class="title">Spin glasses in the nonextensive regime</div>
     </a>
   </div>
-  <div class="journal">Physical Review E <span class="volume">85</span> (2012)</div>
+  <div class="journal">Physical Review E 85 (2012)</div>
 </li>
 </ul>
 
