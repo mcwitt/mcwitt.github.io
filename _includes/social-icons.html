@@ -1,0 +1,8 @@
+<div class="social-icons">
+  {% for icon in site.data.social-icons %}
+  <a class="social-icon--link {{ icon.class }}" href="{{ icon.url }}">
+    {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
+    <span class="social-icon--title visuallyhidden">{{ icon.title }}</span>
+  </a>
+  {% endfor %}
+</div>

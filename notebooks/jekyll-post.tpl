@@ -3,10 +3,11 @@
 {%- block header -%}
 ---
 layout: post
-title: "{{resources['metadata']['name']}}"
+title: "{{resources['metadata']['name'].replace('_',' ')}}"
 tags:
     - python
     - notebook
+comments: true
 ---
 {%- endblock header -%}
 

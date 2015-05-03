@@ -3,13 +3,11 @@ layout: page
 title: Blog
 ---
 
-<div class="home">
-  <table class="posts">
-    {% for post in site.posts %}
-    <tr>
-      <td class="post-date">{{ post.date | date: "%b %-d, %Y" }}</td>
-      <td><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
-    </tr>
-    {% endfor %}
-  </table>
-</div>
+<table class="post-list">
+  {% for post in site.posts %}
+  <tr>
+    <td class="post-date">{{ post.date | date: "%b %-d, %Y" }}</td>
+    <td><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></td>
+  </tr>
+  {% endfor %}
+</table>

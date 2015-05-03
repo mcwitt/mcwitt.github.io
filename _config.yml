@@ -3,7 +3,6 @@ title: Matt Wittmann
 email: mcwitt@gmail.com
 description: "Matt Wittmann"
 baseurl: ""
-url: "http://localhost:4000"
 
 # Build settings
 markdown: kramdown
@@ -11,6 +10,6 @@ highlighter: pygments
 permalink: pretty
 
 kramdown:
-  input: GFM
-  hard_wrap: false
-  smart_quotes: ["lsquo","rsquo","ldquo","rdquo"]
+    input: GFM
+    hard_wrap: false
+    smart_quotes: ["lsquo","rsquo","ldquo","rdquo"]

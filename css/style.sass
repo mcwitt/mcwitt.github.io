@@ -1,99 +1,116 @@
 ---
 ---
 
-$color-hl: hsl(215, 75%, 42%)
-$color-hl-light: lighten($color-hl, 50%)
-$color-fg: #333
-$color-fg-light: #444
+$hl: hsl(215, 75%, 42%)
+$fg: #333
+$fglite: #555
+
+$serif: 'Lora', serif
+$sans: 'Open Sans', sans-serif
+
+html, button, input, select, textarea,
+  .pure-g [class *= "pure-u"]
+    font-family: $sans
 
 body
-    color: $color-fg-light
-    font-family: 'Open Sans', sans-serif
-    font-size: 16px
+  color: $fg
+  font-size: 16px
 
+h1, h2, h3, h4
+  font-weight: 300
+  text-transform: lowercase
+
+a
+  color: $hl
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.container
+  margin: 2em
+
+#header
+  text-align: left
+  h1
+    font-weight: 400
     a
-        color: $color-hl
+      color: $fg
 
-        &:hover
-            color: $color-hl
-            text-decoration: underline
-
-    h1, h2, h3
-        color: $color-fg
-        font-weight: 300
-
-.visuallyhidden
-    border: 0
-    clip: rect(0,0,0,0)
-    height: 1px
-    margin: -1px
-    overflow: hidden
+.nav
+  ul
+    list-style-type: none
+    margin: 1em 0
     padding: 0
-    position: absolute
+    text-transform: lowercase
+    li
+      margin: 0.5em 0
+  a
+    color: $fg
 
-.navbar-static-top
-    margin-bottom: 0
+#page-header
+  h1
+    font-weight: 300
+
+.content 
+  max-width: 40em
+  font-family: $serif
+
+  h1
+    font-size: 24px
+  h2
+    font-size: 18px
+
+  h1, h2, h3, h4
+    font-family: $sans
+
+img.profile
+  float: none
+  width: 10em
+  margin: 0 0 1em 1em
+  border-radius: 4px
+
+.post-list
+  .post-date
+    color: $fglite
+    text-align: right
+    padding: 0.25em 1em
+  .post-link
+    color: $fg
+
+.post-header
+  font-style: italic
 
 .social-icons a:hover
-    text-decoration: none
+  text-decoration: none
 
 .social-icon
-    width: 25px
-    height: 25px
-    margin: 5px
+  width: 1.2em
+  height: 1.2em
+  margin: 0 0.4em 0 0
 
+  path
+    fill: $fg
+
+  &:hover
     path
-        fill: $color-fg
+      fill: $hl
 
-    &:hover
-        path
-            fill: $color-hl
+.visuallyhidden
+  border: 0
+  clip: rect(0,0,0,0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
 
-.fancy-header
-    color: $color-hl-light
-    background: radial-gradient(fade-out($color-hl, 0.2), $color-hl)
-    text-align: center
-    padding: 20px
+@media screen and (min-width: 35.5em)
+  img.profile
+    float: right
 
-    h1, .statement
-        text-shadow: 0 1px 1px darken($color-hl, 30%)
-
-    h1
-        color: white
-
-    .statement
-        margin: 10px
-
-    .btn
-        margin: 5px
-        border: none
-        color: $color-fg
-        background-color: $color-hl-light
-        box-shadow: 0 1px 1px darken($color-hl, 30%)
-
-        &:hover
-            background-color: white
-
-.content
-    font-family: 'Lora', serif
-    max-width: 600px
-
-    h1, h2, h3
-        font-family: 'Open Sans', sans-serif
-
-.post
-    .post-header
-        font-style: italic
-
-    .post-content
-        @extend .content
-
-.posts
-    .post-date
-        text-align: right
-        padding-right: 15px
-
-.papers, .talks, .posters
-    .title
-        font-style: italic
-
+@media screen and (min-width: 48em)
+  #header
+    text-align: right
+    margin-right: 2em
+  .social-icon
+    margin: 0 0 0 0.4em

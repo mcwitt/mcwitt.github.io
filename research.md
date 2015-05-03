@@ -17,84 +17,46 @@ tools originally developed in the study of spin glasses have been applied
 successfully in diverse fields, notably in the study of neural networks and
 general-purpose optimization algorithms.
 
-## Publications
+# Publications
 
-<ul class="papers">
-<li>
-  <div class="authors">
-    <span class="me">Matthew Wittmann</span> and A. P. Young
-  </div>
-  <div class="title">
-    <a href="http://arxiv.org/abs/1504.07709">
-    <div class="title">The connection between statics and dynamics of spin glasses</div>
-    </a>
-  </div>
-  <div class="journal">Phys. Rev. Lett. (submitted 4/2015)</div>
-</li>
-<li>
-  <div class="authors">
-    <span class="me">Matthew Wittmann</span> and A. P. Young
-  </div>
-  <div class="title">
-    <a href="http://arxiv.org/abs/1410.5296">
-    Finite-size scaling above the upper critical dimension
-    </a>
-  </div>
-  <div class="journal">Phys. Rev. E 90 (2014)</div>
-</li>
-<li>
-  <div class="authors">
-    <span class="me">Matthew Wittmann</span>, B. Yucesoy, Helmut G. Katzgraber, J. Machta, A. P. Young
-  </div>
-  <div class="title">
-    <a href="http://arxiv.org/abs/1408.2482">
-    Low-temperature behavior of the statistics of the overlap distribution in Ising spin-glass models
-    </a>
-  </div>
-  <div class="journal">Phys. Rev. B 90 (2014)</div>
-</li>
-<li>
-  <div class="authors">
-    <span class="me">Matthew Wittmann</span> and A. P. Young
-  </div>
-  <div class="title">
-    <a href="http://arxiv.org/abs/1201.1955">
-    <div class="title">Spin glasses in the nonextensive regime</div>
-    </a>
-  </div>
-  <div class="journal">Phys. Rev. E 85 (2012)</div>
-</li>
-</ul>
+- The connection between statics and dynamics of spin glasses<br>
+  **Matthew Wittmann** and A. P. Young<br>
+  Phys. Rev. Lett. (submitted 4/2015)<br>
+  [[arXiv]](http://arxiv.org/abs/1504.07709)
 
-## Talks
+- Finite-size scaling above the upper critical dimension<br>
+  **Matthew Wittmann** and A. P. Young<br>
+  Phys. Rev. E 90 (2014)<br>
+  [[arXiv]](http://arxiv.org/abs/1410.5296)
+  [[DOI]](http://dx.doi.org/10.1103/PhysRevE.90.062137)
 
-<ul class="talks">
-<li>
-  <div class="conference">APS March Meeting, 2014</div>
-  <div class="title">
-    <a href="http://meetings.aps.org/Meeting/MAR14/Session/J35.5">
-    Distinguishing graphs with a quantum annealer using susceptibility measurements
-    </a>
-  </div>
-</li>
-<li>
-  <div class="conference">APS March Meeting, 2013</div>
-  <div class="title">
-    <a href="http://meetings.aps.org/Meeting/MAR13/Session/F29.2">
-    Low-temperature behavior of the spin overlap distribution in one-dimensional long-range diluted spin glasses
-    </a>
-  </div>
-</li>
-</ul>
+- Low-temperature behavior of the statistics of the overlap distribution in Ising spin-glass models<br>
+  **Matthew Wittmann**, B. Yucesoy, Helmut G. Katzgraber, J. Machta, A. P. Young<br>
+  Phys. Rev. B 90 (2014)<br>
+  [[arXiv]](http://arxiv.org/abs/1408.2482)
+  [[DOI]](http://dx.doi.org/10.1103/PhysRevB.90.134419)
 
-## Posters
-<ul class="posters">
-<li>
-  <div class="conference">Berkeley Mini Stat Mech Meeting, 2014</div>
-  <div class="title">
-    <a href="https://dl.dropboxusercontent.com/u/8639724/berkeley2014.pdf">
-    Scheduling: a good candidate for quantum annealing?
-    </a>
-  </div>
-</li>
-</ul>
+- Spin glasses in the nonextensive regime<br>
+  **Matthew Wittmann** and A. P. Young<br>
+  Phys. Rev. E 85 (2012)<br>
+  [[arXiv]](http://arxiv.org/abs/1201.1955)
+  [[DOI]](http://dx.doi.org/10.1103/PhysRevE.85.041104)
+
+
+# Conferences
+
+- Distinguishing graphs with a quantum annealer using susceptibility measurements<br>
+  with Itay Hen and A. P. Young<br>
+  *APS March Meeting, 2014*<br>
+  [[abstract]](http://meetings.aps.org/Meeting/MAR14/Session/J35.5)
+  [[slides]](https://dl.dropboxusercontent.com/u/8639724/MarchMeeting2014.pdf)
+  
+- Low-temperature behavior of the spin overlap distribution in one-dimensional long-range diluted spin glasses
+  with B. Yucesoy, Helmut G. Katzgraber, J. Machta, and A. P. Young<br>
+  *APS March Meeting, 2013*<br>
+  [[abstract]](http://meetings.aps.org/Meeting/MAR13/Session/F29.2)
+
+- Scheduling: a good candidate for quantum annealing?
+  with Itay Hen and A. P. Young<br>
+  *Berkeley Mini Stat Mech Meeting, 2014*<br>
+
