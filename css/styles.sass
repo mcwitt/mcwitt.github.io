@@ -27,32 +27,30 @@ a
     text-decoration: underline
 
 .container
-  margin: 2em
+  margin: 1em
 
 #header
   text-align: left
   h1
     font-weight: 400
-    a
-      color: $fg
+
+  a
+    color: $fg
 
 .nav
   ul
     list-style-type: none
-    margin: 1em 0
     padding: 0
     text-transform: lowercase
     li
-      margin: 0.5em 0
-  a
-    color: $fg
+      margin: 0.5em
 
 #page-header
   h1
     font-weight: 300
 
 .content 
-  max-width: 40em
+  max-width: 48em
   font-family: $serif
 
   h1
@@ -63,11 +61,17 @@ a
   h1, h2, h3, h4
     font-family: $sans
 
-img.profile
+figure
   float: none
-  width: 10em
-  margin: 0 0 1em 1em
-  border-radius: 4px
+  width: 100%
+  margin: 0 1em 1em 0
+  figcaption
+    font-family: $sans
+    a
+      font-size: 10pt
+  img
+    border-radius: 4px
+    width: 100%
 
 .post-list
   .post-date
@@ -105,8 +109,10 @@ img.profile
   position: absolute
 
 @media screen and (min-width: 35.5em)
-  img.profile
+  figure
     float: right
+    margin: 0 0 1em 1em
+    width: 12em
 
 @media screen and (min-width: 48em)
   #header
@@ -114,3 +120,4 @@ img.profile
     margin-right: 2em
   .social-icon
     margin: 0 0 0 0.4em
+
