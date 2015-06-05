@@ -5,7 +5,7 @@ title: Research
 
 I study [complex systems][], particularly those with disorder and
 "frustration", where random interactions between a large number of parts give
-rise to rich emergent behavior which is difficult to understand from first
+rise to emergent behavior which is difficult to understand from first
 principles.
 
 Spin glasses
@@ -85,6 +85,7 @@ spin glass in more than two dimensions is an [NP-hard][] problem.
 
 Publications
 ============
+<a name="pubs"></a>
 
 - The connection between statics and dynamics of spin glasses<br>
   Matthew Wittmann and A. P. Young<br>
