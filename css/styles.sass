@@ -13,7 +13,8 @@ body
   font-size: 16px
 
 h1, h2, h3, h4
-  font-weight: 300
+  font-family: $sans
+  font-weight: lighter
   text-transform: lowercase
 
 a
@@ -28,8 +29,7 @@ a
 #header
   text-align: left
   h1
-    font-weight: 400
-
+    font-weight: bold
   a
     color: $fg
 
@@ -41,21 +41,9 @@ a
     li
       margin: 0.5em
 
-#page-header
-  h1
-    font-weight: 300
-
 .content 
   max-width: 48em
   font-family: $serif
-
-  h1
-    font-size: 24px
-  h2
-    font-size: 18px
-
-  h1, h2, h3, h4
-    font-family: $sans
 
 figure
   float: none
@@ -71,7 +59,7 @@ figure
 
 .post-list
   .post-date
-    color: $fglite
+    font-style: italic
     text-align: right
     padding: 0.25em 1em
   .post-link
