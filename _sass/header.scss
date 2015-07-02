@@ -1,0 +1,54 @@
+#header {
+  text-align: left;
+  font-weight: 600;
+  h1 { font-weight: 800; }
+  a { color: $fg; }
+}
+
+.nav ul {
+  padding: 0;
+  list-style-type: none;
+  text-transform: lowercase;
+  display: inline;
+  li {
+    display: inline;
+    margin: 0 1em 0 0;
+  }
+}
+
+.social-icons a { &:hover { text-decoration: none }}
+
+.social-icon {
+  width: 1em;
+  height: 1em;
+  path { fill: $fg; }
+  &:hover path { fill: $hl; }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@media screen and (min-width: 48em) {
+  #header {
+    text-align: right;
+    margin-right: 2em;
+  }
+  .nav ul {
+    li {
+      display: block;
+      margin: 0 0 1em 0;
+    }
+  }
+  .social-icons ul li {
+    display: inline;
+    margin: 0 0 0 0.5em;
+  }
+}
+

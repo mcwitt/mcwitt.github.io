@@ -89,8 +89,8 @@ $$
 
 The entries in each column have converged to a common value. It follows that
 right multiplication of an arbitrary probability vector by a large power of
-$\Gamma$ yields the column vector
-$\vec{\pi} \approx \begin{pmatrix} 0.55 & 0.27 & 0.18 \end{pmatrix}^T$,
+$\Gamma$ yields the vector
+$\pi \approx \begin{pmatrix} 0.55 & 0.27 & 0.18 \end{pmatrix}$,
 which is the steady-state distribution. What's going on here? How can we see
 that this is true in general for similar Markov processes?
 
