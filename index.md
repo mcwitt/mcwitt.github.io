@@ -7,12 +7,10 @@ title: About
   <img alt="me" src="images/me.jpg">
 </figure>
 
-I'm a PhD candidate in Physics at the [University of California, Santa
-Cruz][UCSC], advised by [Peter&nbsp;Young][Peter]. My main research focus is
-the application of computational methods to the study of disordered systems,
-especially [spin glasses][]. Recently I've also been interested in data science
-and machine learning and started this blog to share my experiences learning the
-tools of the trade.
+I'm a recent PhD in Physics from UC Santa Cruz, transitioning into data science
+and machine learning. My primary interests include predictive modeling, deep
+learning, algorithms, and data visualization. This blog is intended to share my
+experiences in the transition from academia to data science in industry.
 
 [UCSC]: http://www.ucsc.edu
 [Peter]: http://young.physics.ucsc.edu
