@@ -89,8 +89,9 @@ Publications
 
 - The connection between statics and dynamics of spin glasses<br>
   Matthew Wittmann and A. P. Young<br>
-  Phys. Rev. Lett. (submitted 4/2015)<br>
+  J. Stat. Mech. Theor. Exp. 2016, 013301 (2016)<br>
   [[arXiv]](http://arxiv.org/abs/1504.07709)
+  [[DOI]](http://dx.doi.org/10.1088/1742-5468/2016/01/013301)
 
 - Finite-size scaling above the upper critical dimension<br>
   Matthew Wittmann and A. P. Young<br>
