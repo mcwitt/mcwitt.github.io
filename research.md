@@ -93,6 +93,12 @@ Publications
   [[arXiv]](http://arxiv.org/abs/1504.07709)
   [[DOI]](http://dx.doi.org/10.1088/1742-5468/2016/01/013301)
 
+- Finite-size critical scaling in Ising spin glasses in the mean-field regime<br>
+  T. Aspelmeier, Helmut G Katzgraber, Derek Larson, M. A. Moore, Matthew Wittmann, Joonhyun Yeo<br>
+  Phys. Rev. E 93 (2014)<br>
+  [[arXiv]](https://arxiv.org/abs/1509.05372)
+  [[DOI]](https://doi.org/10.1103/PhysRevE.93.032123)
+
 - Finite-size scaling above the upper critical dimension<br>
   Matthew Wittmann and A. P. Young<br>
   Phys. Rev. E 90 (2014)<br>
