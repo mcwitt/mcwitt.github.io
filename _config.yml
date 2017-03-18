@@ -9,6 +9,9 @@ markdown: kramdown
 highlighter: pygments
 permalink: pretty
 
+sass:
+    sass_dir: _sass
+
 kramdown:
     input: GFM
     hard_wrap: false
